@@ -1,0 +1,77 @@
+body{
+    background-color:  #3A496A;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1{
+    padding: 0;
+    margin: 0 0 80px;
+    font-size: 130px;
+}
+
+h3{
+    font-size: 36px;
+    margin: 0;
+}
+
+.color{
+    background-image: url(../imagenes/fondodiv.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fondo{
+    background-image: url(../imagenes/fondo1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: auto;
+    height: 100vh;
+    padding: 0 0 0 165px;
+    position: relative;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.kendrick{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.boton{
+    text-decoration: none;
+    color: #fff;
+    padding: 15px;
+    border: #fff, solid, 2px;
+    border-radius: 5px;
+}
+
+.boton:hover{
+    background-color: rgba(18, 31, 39, 0.801);
+    transition: 0.3s linear;
+}
+
+.centrado{
+    margin: 40px 165px;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.album{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.info{
+    width: 45%;
+}
+
+.info h4{
+    font-size: 26px;
+}
