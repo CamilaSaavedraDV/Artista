@@ -18,13 +18,13 @@ h3{
 }
 
 .color{
-    background-image: url(../imagenes/fondodiv.jpg);
+    background-image: url(/imagenes/fondodiv.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .fondo{
-    background-image: url(../imagenes/fondo1.jpg);
+    background-image: url(/imagenes/fondo1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
