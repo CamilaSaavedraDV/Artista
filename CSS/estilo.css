@@ -3,7 +3,8 @@ body{
     margin: 0;
     padding: 0;
     color: #fff;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: rasgado;
+    letter-spacing: 0.5px;
 }
 
 h1{
@@ -13,9 +14,18 @@ h1{
     position: relative;
 }
 
+h2{
+    font-size: 26px;
+}
+
 h3{
     font-size: 36px;
     margin: 0;
+}
+
+@font-face {
+    font-family: rasgado;
+    src: url(/fuentes/SansCulottes.ttf) format(truetype);
 }
 
 /* MENU */
@@ -59,7 +69,7 @@ h3{
 .menuAbierto ul li a {
     padding: 15px 25px;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 20px;
     color: #ffffff;
     display: block;
     transition: 0.3s;
@@ -100,16 +110,16 @@ h3{
 .boton{
     text-decoration: none;
     color: #fff;
-    margin-top: 10px;
     padding: 15px;
     border: #fff, solid, 2px;
     border-radius: 5px;
+    font-size: 20px;
 }
 
 /* CONTENIDO */
 .centrado{
     margin: 40px 165px;
-    font-size: 20px;
+    font-size: 22px;
     padding-bottom: 10px;
 }
 

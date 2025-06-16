@@ -33,7 +33,7 @@
 }
 
 #menuBurger:checked ~ .menuAbierto {
-    width: 200px;
+    width: 230px;
 }
 
 #menuBurger:checked ~ .menu {
