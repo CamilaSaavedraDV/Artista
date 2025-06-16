@@ -10,6 +10,7 @@ h1{
     padding: 0;
     margin: 0 0 80px;
     font-size: 130px;
+    position: relative;
 }
 
 h3{
@@ -17,12 +18,65 @@ h3{
     margin: 0;
 }
 
-.color{
-    background-image: url(/imagenes/fondodiv.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+/* MENU */
+.oculto{
+    display: none;
 }
 
+.menu{
+    position: fixed;
+    cursor: pointer;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+    transition: opacity 0.3s ease 0.3s, visibility 0.3s ease 0.3s;
+}
+
+.menuAbierto{
+    height: auto;
+    width: 0;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    background-color: #2c3957;
+    overflow: hidden;
+    transition: 0.5s;
+    padding-top: 40px; 
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+}
+
+.menuAbierto ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menuAbierto ul li a {
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+}
+
+.btnCerrado{
+    position: absolute;
+    margin: 0;
+    top: 10px;
+    left: 20px;
+    font-size: 22px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* FONDO */
 .fondo{
     background-image: url(/imagenes/fondo1.jpg);
     background-repeat: no-repeat;
@@ -46,26 +100,36 @@ h3{
 .boton{
     text-decoration: none;
     color: #fff;
+    margin-top: 10px;
     padding: 15px;
     border: #fff, solid, 2px;
     border-radius: 5px;
 }
 
-.boton:hover{
-    background-color: rgba(18, 31, 39, 0.801);
-    transition: 0.3s linear;
-}
-
+/* CONTENIDO */
 .centrado{
     margin: 40px 165px;
     font-size: 20px;
     padding-bottom: 10px;
 }
 
+.escala{
+    transition: 0.3s ease-out;
+}
+
+.escalaBio{
+    margin: 5px;
+    padding: 1px 20px;
+}
+
+.escalaRec{
+    margin: 10px 0px;
+}
+
 .album{
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 30px;
 }
 
 .info{

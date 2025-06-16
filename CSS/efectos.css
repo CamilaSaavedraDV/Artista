@@ -1,0 +1,57 @@
+/* TITULO */
+.linea::after, .linea::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to right, #05112C, #565c88);
+    bottom: -5px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s ease-out;
+}
+
+.linea::before{
+    top: -5px;
+    transform-origin: left;
+}
+
+.linea:hover::after, .linea:hover::before{
+    transform: scaleX(1);
+}
+
+/* MENU */
+
+.btnCerrado:hover {
+    color: #6c79a5;
+}
+
+.menuAbierto ul li a:hover {
+    color: #ffffff;
+    background-color: #6c79a5;
+}
+
+#menuBurger:checked ~ .menuAbierto {
+    width: 200px;
+}
+
+#menuBurger:checked ~ .menu {
+    opacity: 0;  
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.3s ease, visibility 0.3s ease; 
+}
+
+/* BOTON ALBUM*/
+.boton:hover{
+    background-color: #05112cb4;
+    transition: 0.3s linear;
+}
+
+/* EFECTO CONTENIDO*/
+.escala:hover{
+    background-color: #293755;
+    transition: 0.3s ease-out;
+    border-radius: 12px;
+}
